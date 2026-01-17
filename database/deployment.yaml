@@ -13,7 +13,6 @@ spec:
       labels:
         app: postgres
 
-
     spec:
       containers:
         - name: postgres
@@ -25,7 +24,7 @@ spec:
                 name: postgre-secret
           volumeMounts:
             - name: data
-              mountPath: /va/lib/postgresql/data
+              mountPath: /var/lib/postgresql/data
             - name: init
               mountPath: /docker-entrypoint-initdb.d
       volumes:

@@ -4,7 +4,7 @@ metadata:
   name: pv-postgre
 spec:
   capacity:
-    storage: 2Gi
+    storage: 4Gi
   accessModes:
     - ReadWriteOnce
   storageClassName: local-path

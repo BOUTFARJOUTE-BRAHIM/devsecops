@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: security-service
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: security-service
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: security-service
-          image: brahimbtf/security-service:1.0
+          image: brahimbtf/security-service:1.1
           ports:
             - containerPort: 8084
           envFrom:

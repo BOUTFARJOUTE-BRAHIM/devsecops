@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: pay-service
+  name: payment-service
 spec:
   selector:
-    app: pay-service
+    app: payment-service
   ports:
     - port: 8083
       targetPort: 8083

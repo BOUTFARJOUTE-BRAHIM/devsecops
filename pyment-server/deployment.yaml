@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: pay-service
+  name: payment-service
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
-      app: pay-service
+      app: payment-service
   template:
     metadata:
       labels:
-        app: pay-service
+        app: payment-service
     spec:
       containers:
-        - name: pay-service
+        - name: payment-service
           image: brahimbtf/pay-service:1.0
           ports:
             - containerPort: 8083
